@@ -1,0 +1,26 @@
+body{
+    padding: 20px;
+}
+p{
+    color: green;
+}
+/*Classes e Ids*/
+.meu-paragrafo {
+     background-color: rgb(53, 200, 236);
+     color: red;
+}
+
+#titulo-principal {
+    background-color: rgba(255, 255, 0, 0.479);
+    color: black;
+    padding: 10px;
+    font-family: helvetica;
+}
+
+/*Elementos da página, lista */
+*{
+    font-family: Arial;
+}
+p, h1{
+    border-bottom: 2px solid red;
+}

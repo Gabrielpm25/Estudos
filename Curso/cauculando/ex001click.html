@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculo</title>
+    <style>
+   
+    div#area{ 
+      font: normal 20pt Arial ;
+      background: rgb(255, 211, 16);
+      width: 200px;
+      height: 200px;
+      color: brown;
+     
+      line-height: 200px;
+      text-align: center;
+
+   }
+
+    </style>
+</head>
+<body>
+    <div id="area">
+        Interaja...
+    </div>
+
+
+    <script>
+        
+        var a = window.document.getElementById('area')
+        a.addEventListener('click',Clicar)
+        a.addEventListener('mouseenter',entra)
+        a.addEventListener('mouseout',saiu)
+        function Clicar() {
+            a.innerText = 'Clicou'
+        }
+        function entra() {
+            a.innerText = 'Entrou'
+        }
+        function saiu() {
+            a.innerHTML = 'Saiu'
+        }
+    </script>
+</body>
+</html>

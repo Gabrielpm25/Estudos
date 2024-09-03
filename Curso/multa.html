@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <h1>Sistema de multa</h1>
+    Qual velocidade estava: <input type="number" name="n1" id="n1">Km/h
+    <input type="button" value="calcular" onclick="calcular()">
+    <p id="resultado">resultado...</p>
+
+    <script>
+        function calcular(){
+            var nun1 = document.querySelector('input#n1')
+            var valor = Number(num1.value)
+            var resultado = document.querySelector('p#resultado')
+            resultado.innerHTML = `<p>Sua velocidade é de: <strong>${num1}KM/h<strong><p>`
+        }
+    </script>
+</body>
+</html>

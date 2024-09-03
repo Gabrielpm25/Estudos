@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gasto de motos</title>
+</head>
+<body>
+    <h1>Calculo de Gastos</h1>
+    <p>Preço da Gasolina<input type="number" name="" id="gasolina"></p>
+    <p>Quantos Km faz por litro <input type="number" name="" id="consumo"></p>       
+    <p>Km rodados no mês:<input type="number" name="" id="rodados"></p>
+    <p><input type="button" value="Calcular" onclick="calcula()"></p>
+    <div id="res1">Result...</div>
+    <p>Preço do litro de Óleo:<input type="number" name="" id="oleo"></p>    
+    <p>Preço do Pneu: <input type="number" name="" id="pneu"></p>
+    <p>Preço da Pastilha de Freio: <input type="number" name="" id="freio"></p>
+    <p>Preço do Kit Relação: <input type="number" name="" id="relacao"></p>
+    <p><input type="button" value="Valor Total" onclick="total()"></p>
+    <div id="res3">Result...</div>
+
+    <script>
+        
+        function calcula(){
+           var gasolina = document.querySelector('input#gasolina')
+        
+           var consumo = document.querySelector('input#consumo')
+        
+           var rodados = document.querySelector('input#rodados')
+       
+           var res1 = document.querySelector('div#res1')
+           var nun1 = Number(gasolina.value)
+           var nun2 = Number(consumo.value)
+           var nun3 = Number(rodados.value)
+           var res = (nun3 / nun2) * nun1
+           res1.innerHTML = `Gasto por mês: ${res}$`
+        }
+        
+       
+        function total(){
+            var oleo = document.querySelector('input#oleo')
+
+            var pneu = document.querySelector('input#pneu')
+
+            var freio = document.querySelector('input#freio')
+
+            var relacao = document.querySelector('input#relacao')
+
+            var res3 = document.querySelector('div#res3')
+            
+            var oleo1 = Number(oleo.value)
+            var pneu1 = Number(pneu.value)
+            var freio1 = Number(freio.value)
+            var relacao1 = Number(relacao.value)
+            var re = oleo + pneu + freio + relacao + res
+            res3.innerHTML = `<p>Gasto por mês: <strong>${re}$<strong><p>`
+        }
+        
+
+
+    </script>
+</body>
+</html>
